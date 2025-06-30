@@ -3,6 +3,53 @@
 ## Intro
 > _ADD LATER_
 
+## Installing Git
+
+To install Git based on your OS:
+
+- **Windows**: [https://git-scm.com/downloads/win](https://git-scm.com/downloads/win)
+- **Ubuntu**:  
+  ```bash
+  sudo apt-get install git
+   ```
+
+- **Fedora**:
+  For Fedora 21 and below:
+
+  ```bash
+  sudo yum install git
+  ```
+
+- For Fedora 22 and above:
+
+  ```bash
+  sudo dnf install git
+  ```
+* **macOS**:
+
+  ```bash
+  brew install git
+  ```
+
+---
+
+## Setting up Git
+
+After installing Git, configure your user information and default branch:
+
+```bash
+# Check Git version
+git --version
+
+# Set your Git username
+git config --global user.name "Your Name"
+
+# Set your Git email
+git config --global user.email "your.email@example.com"
+
+# Set 'main' as the default branch for new repos
+git config --global init.defaultBranch main
+```
 ---
 
 ## Git Commands
