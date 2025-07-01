@@ -3,9 +3,9 @@
 ## Intro
 > _ADD LATER_
 
-## Installing Git
+## Installing Git & GitHub CLI
 
-To install Git based on your OS:
+To install **Git** based on your OS:
 
 - **Windows**: [https://git-scm.com/downloads/win](https://git-scm.com/downloads/win)
 - **Ubuntu**:  
@@ -25,15 +25,18 @@ To install Git based on your OS:
   ```bash
   sudo dnf install git
   ```
-* **macOS**:
+- **macOS**:
 
   ```bash
   brew install git
   ```
+  
+To install **GitHub CLI** (gh): [https://github.com/cli/cli#installation](https://github.com/cli/cli#installation)
+
 
 ---
 
-## Setting up Git
+## Setting up Git & GitHub CLI
 
 After installing Git, configure your user information and default branch:
 
@@ -49,6 +52,9 @@ git config --global user.email "your.email@example.com"
 
 # Set 'main' as the default branch for new repos
 git config --global init.defaultBranch main
+
+# Authenticate GitHub CLI
+gh auth login
 ```
 ---
 
