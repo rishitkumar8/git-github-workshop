@@ -121,6 +121,9 @@ git branch
 # Create a new branch
 git branch new-branch
 
+# List all branches (local + remote)
+git branch -a
+
 # Switch to a branch (existing)
 git switch branch-name
 
