@@ -62,7 +62,7 @@ git init
 git status
 
 # Adding a single file to the staging area
-git add <file-name>
+git add file-name
 
 # Adding all files to the staging area
 git add .
@@ -80,10 +80,10 @@ git log --oneline
 git diff
 
 # Restoring a modified file to the last committed version
-git restore <file-name>
+git restore file-name
 
 # Removing a file from the staging area (unstage)
-git restore --staged <file-name>
+git restore --staged file-name
 ````
 
 ---
@@ -105,6 +105,9 @@ git clone https://github.com/some-user/some-repo.git
 
 # Pulling latest changes from the main branch
 git pull origin main
+
+# Fetching changes from the remote without merging them into your current branch
+git fetch
 ```
 
 ---
@@ -134,6 +137,48 @@ git branch -m new-name
 git branch -d branch-name
 ```
 
+### Combining Branches
+```bash
+# Merging another branch into your current branch
+git merge branch-name
+
+# Rebase your current branch on top of another branch
+git rebase branch-name
+```
+
+---
+## Undoing Commits and Fixing Mistakes
+```bash
+# Edit last commit message
+git commit --amend
+
+# Undo last commit, keep changes staged
+git reset --soft HEAD~1
+
+# Undo last commit, unstage changes
+git reset --mixed HEAD~1
+
+# Undo last commit and discard changes (careful!)
+git reset --hard HEAD~1
+```
+
+---
+## Working with Stash
+
+```bash
+# Save your uncommitted changes temporarily
+git stash
+
+# List all stashed entries
+git stash list
+
+# Re-apply the most recent stash and remove it
+git stash pop
+
+# Apply without removing from stash list
+git stash apply
+
+```
 ---
 
 ## Best Practices for Commit Messages
