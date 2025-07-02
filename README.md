@@ -214,6 +214,48 @@ git commit -m "doc: added setup instructions to README"
 ```
 ---
 
+## How to Make a Pull Request (PR)
+
+Follow these steps to contribute to a project by making a Pull Request:
+
+1. **Fork the repository on GitHub**  
+   Go to the original repository and click the **"Fork"** button at the top-right corner.  
+   This creates a copy of the repository under your GitHub account.
+
+2. **Clone your fork to your local machine**
+   ```bash
+   git clone https://github.com/your-username/the-repo-name.git
+   cd the-repo-name
+    ```
+
+3. **Create a new branch for your changes**
+
+   ```bash
+   git checkout -b your-feature-branch
+   ```
+
+4. **Make your changes and commit them**
+
+   ```bash
+   git add .
+   git commit -m "feat: meaningful commit message"
+   ```
+
+5. **Push your branch to your fork on GitHub**
+
+   ```bash
+   git push origin your-feature-branch
+   ```
+
+6. **Open a Pull Request on GitHub**
+
+   * Go to your forked repository on GitHub.
+   * Click the **"Compare & pull request"** button.
+   * Add a **clear title** and **description** explaining what your PR does. (Refer to [Good Things to Mention in a Pull Request (PR)](#good-things-to-mention-in-a-pull-request-pr))
+   * Click **"Create pull request"**.
+
+---
+
 ## Good Things to Mention in a Pull Request (PR)
 
 When opening a Pull Request on GitHub, it’s important to clearly explain what your code does. This helps maintainers review your work faster and improves your chances of getting it merged.
@@ -247,3 +289,4 @@ Bonus Tips:
 - If your PR is still a work in progress, add `[WIP]` to the title or use GitHub’s draft PR feature.
 
 ---
+
